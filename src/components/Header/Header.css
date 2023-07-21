@@ -1,0 +1,64 @@
+.logo{
+    width: 80px;
+    margin:7px;
+}
+
+.me-auto{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.me-auto a {
+    color: black !important;
+}
+
+.navbar-toggler{
+    margin: 0 auto;
+    color: black !important;
+    margin-bottom: 15px;
+}
+
+.nav-item > a {
+    color: black !important;
+}
+
+.nav-item{
+    margin-bottom: 15px;
+}
+
+
+
+
+.dropdown-menu > a{
+    text-align: center;
+}
+
+.dropdown-menu > a:hover {
+    background-color: rgb(246, 220, 192);
+}
+
+.centered > nav >{ 
+    display: flex;
+    justify-content: center !important;
+    margin: 0 auto !important;
+    
+}
+
+.dropdown-menu{
+background-color: rgb(246 235 223) !important;
+}
+
+
+
+
+@media (max-width: 480px) {
+    .container{
+        width: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container {
+        width: 50vw !important;
+    }
+}
