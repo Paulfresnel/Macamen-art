@@ -3,9 +3,20 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./Header.css"
-import { NavLink } from 'react-bootstrap';
+import { useContext } from 'react';
+import { AuthContext } from '../../context/auth.context';
+import Button from 'react-bootstrap/Button';
 
 function Header() {
+    const { user, logOutUser } = useContext(AuthContext)
+
+    console.log("user",user)
+
+    const logOut = (e) =>{
+        e.preventDefault();
+        logOutUser();
+    }
+
   return (
     <div>
     <img class="logo" src="images/Logo-macamenfresnel.png" alt="macamen art logo"/>
@@ -50,6 +61,7 @@ function Header() {
               
             </NavDropdown>
             <Nav.Link>Galerie d'Art</Nav.Link> 
+            {user && <Button onClick={(e)=>logOut(e)} variant="danger">Se Déconnecter</Button> }
           </Nav>
         </Navbar.Collapse>
       </Container>

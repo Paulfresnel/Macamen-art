@@ -1,4 +1,10 @@
 .input-group{
-    width: 65vw;
+    width: 50vw;
     margin: 0 auto;
+}
+
+.responsive-alert{
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 20px;
 }
